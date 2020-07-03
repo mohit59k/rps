@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap');
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Asap, MuseoModerno;
+}
+header{
+  padding: 20px;
+}
+header>h1{
+  background-color: #5c5c8a;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+}
+body{
+
+  background-image: url("images/bgimage.jpg");
+}
+.score-board{
+  border: 3px solid white;
+  width: 250px;
+  height: 100px;
+  margin: auto;
+  color: white;
+  font-size: 30px;
+  border-radius: 4px;
+  padding: 15px 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  position: relative;
+}
+.badge{
+  background: #ff0000;
+}
+
+
+#user-label{
+position: absolute;
+top: 25px;
+left: -50px;
+}
+
+#computer-label{
+  position: absolute;
+  top: 25px;
+  right: -50px;
+
+}
+
+#user-score{
+  position: absolute;
+  left: 45px;
+  top: 10px;
+  font-size: 50px;
+}
+
+#comp-score{
+  position: absolute;
+  right: 55px;
+  top: 10px;
+    font-size: 50px;
+}
+
+#colon{
+  position: absolute;
+  left:115px;
+  top: 8px;
+  font-size: 48px;
+}
+
+.result{
+  margin-top: 30px;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+.choices{
+  text-align: center;
+}
+.choice{
+  display: inline-block;
+  border: 11px solid black;
+  border-radius: 50%;
+  padding: 20px;
+  margin-top: 50px ;
+  margin-left: 20px;
+  margin-right: 20px;
+  /*transition: all .5s ease;*/
+  /*animation: fadeInAnimation ease 2s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }*/
+}
+
+.choice:hover{
+  cursor: pointer;
+  background: #5c5c8a;
+  transition: all 0.5s ease;
+}
+
+#action-message{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 50px;
+  color: black;
+}
+
+.green-glow{
+  border:11px solid #00ff00;
+}
+
+.red-glow{
+  border:11px solid #ff0000;
+}
+
+.yellow-glow{
+  border:11px solid #ffff00;
+}
